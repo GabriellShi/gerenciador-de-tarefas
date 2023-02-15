@@ -89,9 +89,118 @@ dando margin interna direira, colocando o cursor pointer e definindo a cor de fu
     cursor: pointer;
     background-color: gray;
     color: white;
-}
+} 
 
 /* Definindo a cor que os botões de editar e excluir terão ao passar o mouse  */
 .btnAcao:hover {
     background-color: rgb(156, 154, 154);
+}
+
+/* Estilizando o texto tarefas para não quebra a sequencia de texto  */
+.textoTarefa {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+/* Estilizando a janela de edição que  ira subir ao ser selecionada no botão edição */
+#janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #191818;
+    border: 1px solid #2f2e2e;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+/* Estilizando a camada da janela de edição de fundo que pegara a tela toda e ficara com um tom preto transparente para
+quando subir a janela de edição */
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+/* Deixando a janela como inportante para sobrepor as outras  */
+#janelaEdicaoFundo.abrir {
+   display: block !important;    
+}
+
+/* Estilização o botão de fechar da janela flutuante de editar tarefa  */
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d2c2c;
+    background-color: #2d2c2c;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Definindo a largura do formulario e dando um espaçamento superior  */
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilizando a div do formulario que contem o input de editar tarefa e o botão de salvar  */
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o label com um borda inferior para dar espaço entre a caixa de texto de editar lista e salva  */
+.frm-linha label {
+    margin-bottom: 7px;
+}
+
+/* Estilizando o input que é a caixa de texto de editar a informação da tarefa  */
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background-color: #2d2c2c;
+    color: white;
+}
+
+/* Estilizando o botão de salvar a edição feito na tarefa  */
+.frm-linha button {
+    background-color: #2d2c2c;
+    border: 1px solid #191818;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: gray;
+    cursor: pointer;
+    height: 40px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+/* Dando uma mudança de cor ao passar o mouse no botão salvar  */
+.frm-linha button:hover {
+    background-color: #3c3a3a;
 }
