@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    
+</head>
+<body>
+
+<!-- Container Maior  -->
+    <div class="conteudo">
+
+<!-- div topo, onde será adicionado uma nova tarefa com um input para informar o texto e um botão para adicionar -->
+        <div class="topo">
+            <input type="text" id="inputNovaTarefa" placeholder="Adicone uma Nova Tarefa">
+            <button id="btnAddTarefa">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+
+<!-- Aqui sera onde ira aparecer a lista de tarefa que foi adicionada no topo, tendo o texto da tarefa e dois botão,
+ um de editar a tarefa e outro de excluir  -->
+        <ul id="listaTarefas">
+        </ul>
+    </div>
+    <script src="/tarefas.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* Estilizando o corpo do projeto, definindo cor de fundo, cor da fonte, margin, o estilo da fonte e o tamanho da fonte  */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* Estilizando a section conteudo do projeto, zerando as margin para ficar centralizado, definindo a largura 
+e o maximo de largura que podera ter, as margin inferior e superior para dar espaçamento, a cor de fundo, 
+a margin interna do container e arredondando as bordas do container  */
+.conteudo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: gray;
+    padding: 55px;
+    border-radius: 12px;
+}
+
+/* Definindo o espaçamento que as informações da div topo teram uma da outra e dando uma margin interna inferior para dar
+espaço entre o topo e a lista de tarefas  */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+/* Estilização da largura do input, da margin interna total dele, do arredondamento das borda, definindo a borda, as cores
+de fundo e da fonte, definindo o tamanho da fonte e utilizando o "outline" para remover a borda que fica ao clicar no input  */
+.topo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgb(110, 110, 110);
+    outline: none;
+    font-size: 1.2rem;
+    background-color: rgb(56, 55, 55);
+    color: white;
+}
+
+/* Estilizando a largura do botão do topo, definindo o arredondamento das bordas, a cor da borda, a cor de fundo e cor da fonte
+e utilizando o "outline" para remover a borda que fica ao clicar no input */
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid rgb(110, 110, 110);
+    background-color: rgb(56, 55, 55);
+    color: white;
+    outline: none;
+}
+
+/* Estilizando o botão com hover ao passar o mouse mudar e cor e usando o cursor pointer para indicar que é clicavel */
+.topo button:hover{
+    background-color: rgb(80, 79, 79);
+    cursor: pointer;
+}
+
+/* Retirando o circulo que sinaliza uma lista e zerando as margin  */
+#listaTarefas{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Definindio a margin inter da lista de tarefas, definindo a cor de fundo, o arredondamento das bordas, o espçamento 
+e centralizamento da lista  */
+#listaTarefas li {
+    padding: 20px;
+    background-color: rgb(56, 55, 55);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Definindo o arredondamento dos botões de editar e excluir, dando cor a borda do botão, definindo a largura e altura,
+dando margin interna direira, colocando o cursor pointer e definindo a cor de fundo e cor de fonte  */
+.btnAcao {
+    border-radius: 5px;
+    border: 1px solid rgb(110, 110, 110);
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+/* Definindo a cor que os botões de editar e excluir terão ao passar o mouse  */
+.btnAcao:hover {
+    background-color: rgb(156, 154, 154);
+}
